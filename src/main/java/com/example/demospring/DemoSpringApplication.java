@@ -13,7 +13,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class DemoSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoSpringApplication.class, args);
+        Global.currentContext=SpringApplication.run(DemoSpringApplication.class, args);
         HelloApplication.main(args);
     }
 

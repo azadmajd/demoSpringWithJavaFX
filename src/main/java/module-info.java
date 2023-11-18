@@ -24,7 +24,7 @@ module demoSpring {
 
     exports com.example.demospring;
     opens com.example.demospring to javafx.fxml, spring.core, org.hibernate.orm.core;
-    opens com.example.demospring.entity to javafx.fxml, spring.core, org.hibernate.orm.core;
+    opens com.example.demospring.controller to javafx.fxml, spring.core, org.hibernate.orm.core,spring.beans,spring.web;
+    opens com.example.demospring.entity to javafx.fxml, spring.core, org.hibernate.orm.core,spring.beans;
     opens com.example.demospring.repository to javafx.fxml, spring.core, org.hibernate.orm.core;
-    opens com.example.demospring.handler to javafx.fxml,spring.beans, spring.core, org.hibernate.orm.core;
 }
